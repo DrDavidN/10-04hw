@@ -23,7 +23,8 @@
 
 ## Задание 3.
 #### nodeone
-```/etc/rsyncd.conf 
+##### /etc/rsyncd.conf 
+```
 pid file = /var/run/rsyncd.pid
 log file = /var/log/rsyncd.log
 transfer logging = true
@@ -31,7 +32,8 @@ munge symlinks = yes
 
 ```
 
-```backup-node1.sh
+##### backup-node1.sh
+```
 #!/bin/bash
 date
 # Папка, куда будем складывать архивы — ее либо сразу создать либо не создавать а положить в уже существующие
@@ -55,7 +57,8 @@ echo "Finish backup ${srv_name}"
 ```
 
 #### nodetwo
-```/etc/rsyncd.conf
+##### /etc/rsyncd.conf
+```
 
 pid file = /var/run/rsyncd.pid
 log file = /var/log/rsyncd.log
